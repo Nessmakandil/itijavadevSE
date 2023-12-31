@@ -14,7 +14,7 @@ Applet is an HTML tag that asks the server to send the java application the .cla
 4. Paint
 5. Stop
 
-To run the files use the command: 
+#To run the files use the command: 
 1. javac --release 9 HelloApplet.java, to compile the java class
 2. appletviewer index.html, to view the html file
 
