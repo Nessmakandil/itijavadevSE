@@ -1,3 +1,4 @@
+import java.util.Random;
 
 class ArrayTestClass {
 
@@ -6,7 +7,15 @@ class ArrayTestClass {
         String[] myStrings;
         int[][] MultiDimArr;
         String str;
-        
+        Integer i2 = new Integer(10);
+        /*DataType Identifier = reference to object from class */
+        byte b = i2.byteValue();
+        String s = Integer.toHexString(i2); 
+        Random rand = new Random();       
+        int x = rand.nextInt(10);
+        int y = rand.nextInt(10);
+        int z = x<y?0:1; /*Ternary Operator */
+
         myArray = new int[3];
         myStrings = new String[4];
         MultiDimArr = new int[2][2];
@@ -34,6 +43,10 @@ class ArrayTestClass {
         System.out.println(myStrings[2] == myStrings[3]);
         System.out.println(str.equals(myStrings[3]));
         System.out.println(myStrings[2].equals(myStrings[3]));
+        System.out.println(i2);
+        System.out.println(b);
+        System.out.println(s);
+        System.out.println(z);
 
         for (int j = 0; j < MultiDimArr.length; j++)
         {
